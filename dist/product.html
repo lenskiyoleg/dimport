@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://allfont.ru/allfont.css?fonts=micra" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="section--header">
+	<div class="container">
+		<div class="section--header__wrapper">
+			<div class="section--header__wrapper--logo">
+				<img src="img/logotype.svg" alt="">
+				<div class="logotype">
+					<div class="sublogo">Производство и поставка<br>автокомпонентов и комплектующих</div>
+				</div>
+			</div>
+			<div class="section--header__wrapper--nav">
+				<div class="top-section">
+					<div class="navigation">
+						<ul>
+							<li>О компани</li>
+							<li>Доставка<br>и оплата</li>
+							<li>Отзывы</li>
+							<li>Вопрос-<br>ответ</li>
+							<li>Контакты</li>
+						</ul>
+					</div>
+					<div class="authorization">
+						<div class="login">
+							<img src="img/login.svg" alt="">
+							Вход
+						</div>
+						<div class="signup">
+							<img src="img/signin.svg" alt="">
+							Регистрация
+						</div>
+					</div>
+				</div>
+				<div class="bottom-section">
+					<div class="address">
+						<a href="#">+7 (912) 853-04-76</a>
+						426000, УДМУРТИЯ, Г.ИЖЕВСК, УЛ. АЗИНА, 43
+					</div>
+					<div class="cart">
+						<img src="img/cart.svg" alt="">
+						<div class="wrapper">
+							<div class="title">Корзина</div>
+							<div class="subtitle">8 шт. 2 480 ₽</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="section__search">
+    <div class="container">
+        <form class="section__search--form" action="">
+            <input placeholder="Поиск по каталогу, например Электровентилятор отопителя" type="text">
+            <span>
+                <img src="img/pupa.svg" alt="">
+            </span>
+            <button type="submit">Поиск</button>
+        </form>
+    </div>
+</section>
+<section class="section__content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section__content--sidebar">
+                    <ul>
+                        <li>Категория товаров №1</li>
+                        <li class="active">Категория товаров №1</li>
+                        <li>Категория товаров №1</li>
+                        <li>Категория товаров №1</li>
+                        <li>Категория товаров №1</li>
+                        <li>Категория товаров №1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="section__content--main">
+                    <div class="section__content--wrapper">
+                        <div class="section__content--main--crumbs">
+                            <ul>
+                                <li>Каталог</li>
+                                <li>Подкатегория каталога №1</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div class="section__content--main--product">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="images">
+                                        <div class="main-image">
+                                            <img src="img/image.jpg" alt="">
+                                        </div>
+                                        <div class="sub-images">
+                                            <img src="img/image.jpg" alt="">
+                                            <img src="img/image.jpg" alt="">
+                                            <img src="img/image.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="header">
+                                        <div class="top-section">
+                                            <div class="title">
+                                                Электровентилятор отопителя Lacetti (04-)
+                                            </div>
+                                            <div class="printer">
+                                                <img src="img/printer.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-section">
+                                            <div class="raiting">
+                                                <img src="img/star.svg" alt="">
+                                                <img src="img/star.svg" alt="">
+                                                <img src="img/star.svg" alt="">
+                                                <img src="img/emptystap.svg" alt="">
+                                                <img src="img/emptystap.svg" alt="">
+                                            </div>
+                                            <div class="reviews">
+                                                Смотреть отзывы (11)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2">Основные характеристики</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            В наличии
+                                                        </td>
+                                                        <td>
+                                                            В наличии
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Параметр
+                                                        </td>
+                                                        <td>
+                                                            Значение
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Параметр
+                                                        </td>
+                                                        <td>
+                                                            Значение
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Параметр
+                                                        </td>
+                                                        <td>
+                                                            Значение
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <div class="button-wrapper">
+                                                    <div class="button">
+                                                        Смотреть все характеристики
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="body--wrapper">
+                                                    <div class="title">Цена</div>
+                                                    <div class="price">1999 <span>рублей</span></div>
+                                                    <div class="instock">
+                                                        В наличии
+                                                    </div>
+                                                    <div class="input-quantity">
+                                                        <span>Количество:</span>
+                                                        <div id="minusvalue" class="left-arrow">
+
+                                                        </div>
+                                                        <input value="1" type="number">
+                                                        <div id="plusvalue" class="right-arrow">
+
+                                                        </div>
+                                                        <span>шт</span>
+                                                    </div>
+                                                    <div class="buy-button">
+                                                        Купить в один клик
+                                                    </div>
+                                                    <div class="incart-button">
+                                                        В корзину
+                                                    </div>
+                                                    <div class="icons">
+                                                        <div class="icon">
+                                                            <img src="img/okay.svg" alt="">
+                                                            <div class="title">Товар в наличии</div>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <img src="img/location.svg" alt="">
+                                                            <div class="title">Пермь <span>(изменить)</span></div>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <img src="img/truck.svg" alt="">
+                                                            <div class="title">Доставка:
+                                                                <p>Самовывоз из Ижевска</p>
+                                                                <p>Почта России  1700руб.  2 дня</p>
+                                                                <p>CDEK  700руб.  3 дня</p>
+                                                                <p>Курьером  2500руб. 5 дней</p>
+                                                                <a href="#">Подробнее о доставке</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="tabs">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Описание</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Харакристики</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Применяемость</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Отзывы и комментарии <span>(11)</span></a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <h2>
+                                                    Электровентиляторы отопителя
+                                                </h2>
+                                                <h3>
+                                                    Фирменные наименования
+                                                </h3>
+                                                <p>
+                                                    Вентилятор системы отопителя – это электродвигатель в сборе с крыльчаткой, который обеспечивает циркуляцию потока воздуха через радиатор отопления и поступление воздуха в салон автомобиля, создавая комфортный климат для водителя. Могут быть осевым (поток воздуха направлен вдоль оси двигателя) либо центробежным (поток идет перпендикулярно оси вращения).
+                                                </p>
+                                                <p>Общепринятыми являются другие наименования – электровентилятор, э/вентилятор, мотор отопителя, мотор печки…</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">харки</div>
+                                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">хуйня</div>
+                                            <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">work.</div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="recommend">
+                                        <div class="header">
+                                            Аналогичные товары
+                                        </div>
+                                        <div class="body">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="item">
+                                                        <div class="image">
+                                                            <a href="#">
+                                                                <img src="img/image.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="body">
+                                                            <div class="title">
+                                                                <a href="#">
+                                                                    Электровентилятор отопителя 2101-2107
+                                                                </a>
+                                                            </div>
+                                                            <div class="instock">В наличии</div>
+                                                            <div class="price">820.00 рублей</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="section__footer">
+
+    <div class="container">
+        <div class="section__footer--wrapper">
+            <div class="row">
+            <div class="col-md-3">
+                <div class="header">
+                    <div class="image">
+                        <img src="img/logotype.svg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Производство и поставка автокомпонентов и комплектующих
+                    </div>
+                    <div class="phone">8 800 000 00 00</div>
+                    <div class="address">
+                        Адрес: Ижевск. ул.Одиндватри, д.200, оф.4
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="navigation">
+                    <div class="title">
+                        Информация
+                    </div>
+                    <ul>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="navigation">
+                    <div class="title">
+                        Информация
+                    </div>
+                    <ul>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                        <li>Каталог товаров</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="navigation">
+                    <div class="title">
+                        Для связи
+                    </div>
+                    <ul>
+                        <li>Email: sales@dimport.ru</li>
+                        <li>Телефон: +7 999 999 99 99</li>
+                    </ul>
+                    <div class="socials">
+                        <div class="title">
+                            Мы в соц. сетях:
+                        </div>
+                        <img src="img/vk.svg" alt="">
+                        <img src="img/facebook.svg" alt="">
+                        <img src="img/instagram.svg" alt="">
+                    </div>
+                    <a href="#" class="button">
+                        Обратная связь
+                    </a>
+                    <div class="buy">
+                        <div class="title">
+                            Мы принимаем к оплате
+                        </div>
+                        <div class="images">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="section__footer--basement">
+            DIMPORT.RU 1999-2020 (С) Все права защищены. Копирование и использование информации и изображений без разрешения правообладателя запрещено и преследуется по закону
+            <br><br>
+            “Обращаем ваше внимание на то, что информация о товаре носит исключительно справочный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Производитель оставляет за собой право изменять комплектацию и характеристики товара без предварительного уведомления, при этом функциональные и качественные показатели товара не ухудшаются.”
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(
+        $(function(){
+            $('#minusvalue').click(function () {
+                var value = $(this).parent().find('input').val();
+                value--;
+                $(this).parent().find('input').val(value);
+            });
+        }),
+        $(function () {
+            $('#plusvalue').click(function () {
+                var value = $(this).parent().find('input').val();
+                value++;
+                $(this).parent().find('input').val(value);
+            });
+        })
+    );
+</script>
+</body>
+</html>
